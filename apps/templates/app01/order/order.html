@@ -1,0 +1,24 @@
+{% extends 'app01/layout.html' %}
+
+
+{% block content %}
+      <p>用户信息</p>
+    {% if page_permission.has_add() %}
+        <a href="/app01/order/add/">添加</a>
+    {% endif %}
+
+    {% for row in data %}
+       <p>
+           {{ row.id }} | {{ row.username }} | {{ row.email }} |
+           {% if page_permission.has_edit() %}
+               <a href="/app01/order/edit/{{ row.id }}/">编辑</a> |
+           {% endif %}
+           {% if page_permission.has_del() %}
+                <a href="/app01/order/del/{{ row.id }}/">删除</a>
+           {% endif %}
+
+       </p>
+    {% endfor %}
+{% endblock content %}
+
+
