@@ -1,24 +1,85 @@
-<div class="menu">
+{#================原始==================#}
+{#<div class="menu">#}
+{#    {% for k,menu in menu_dic.items() %}#}
+{#        <div class="menu_first">{{ menu.menu_title }}</div>#}
+{#        {% if menu.active %}#}
+{#            <ul class="">#}
+{#        {% else %}#}
+{#            <ul class="hide">#}
+{#        {% endif %}#}
+{##}
+{#        {% for child in menu.children %}#}
+{#            {% if child.active %}#}
+{#                <li class="menu_second active"><a href="{{ child.permission_url }}">{{ child.permission__title }}</a></li>#}
+{#            {% else %}#}
+{#                <li class="menu_second"><a href="{{ child.permission_url }}">{{ child.permission__title }}</a></li>#}
+{#            {% endif %}#}
+{#        {% endfor %}#}
+{#        </ul>#}
+{#    {% endfor %}#}
+{#</div>#}
+
+{#=====================下边是面板修改的============================#}
+
+{#<div class="panel panel-primary" style="border-style:none;">#}
+{#    <div class="panel-body">#}
+{#        {% for k,menu in menu_dic.items() %}#}
+{#            <div class="panel panel-primary" id="first-menu">#}
+{#            <div class="panel-heading item_permission menu_first">{{ menu.menu_title }}</div>#}
+{#            {% if menu.active %}#}
+{#                <ul class="">#}
+{#            {% else %}#}
+{#                <ul class="hide">#}
+{#            {% endif %}#}
+{#            {% for child in menu.children %}#}
+{#                {% if child.active %}#}
+{#                    <li class="menu_second active"><a href="{{ child.permission_url }}">{{ child.permission__title }}</a>#}
+{#                    </li>#}
+{#                {% else %}#}
+{#                    <li class="menu_second"><a href="{{ child.permission_url }}">{{ child.permission__title }}</a></li>#}
+{#                {% endif %}#}
+{#            {% endfor %}#}
+{#            </ul>#}
+{#        </div>#}
+{#        {% endfor %}#}
+{#        </div>#}
+{#    </div>#}
+
+{#===================下边是一个copy的=======================#}
+<h4>后台管理页面</h4>
+{#<div class="cover">#}
+{#    <p>模板这里可以放头像什么的，但是觉得不好看</p>#}
+{#</div>#}
+<ul class="sidenav animated fadeInUp">
+    <li><a class="withripple" href=""><i class="icon icon-home"></i><span class="sidespan">首页</span></a></li>
     {% for k,menu in menu_dic.items() %}
-        {# 一级菜单 #}
-        <div class="menu_first">{{ menu.menu_title }}</div>
+        <li><a class="withripple hover" href="javascript:;"><i class="icon icon-article"></i><span
+                class="sidespan">{{ menu.menu_title }}</span><i class="iright pull-right">&gt;</i>
+            </a>
+            {% if menu.active %}
+                <ul class="sidebar-dropdown" style="display: block">
+            {% else %}
+                <ul class="sidebar-dropdown" style="display: none">
+            {% endif %}
 
-        {# 二级菜单(就是一级菜单下边的内容) #}
-        {% if menu.active %}
-            <ul class="">
-        {% else %}
-            <ul class="hide">
-        {% endif %}
-
-    {% for child in menu.children %}
-        {% if child.active %}
-            <li class="menu_second active"><a href="{{ child.permission_url }}">{{ child.permission__title }}</a></li>
-        {% else %}
-            <li class="menu_second"><a href="{{ child.permission_url }}">{{ child.permission__title }}</a></li>
-        {% endif %}
+            {% for child in menu.children %}
+                {% if child.active %}
+                    <li class="menu_second active"><a href="{{ child.permission_url }}">{{ child.permission__title }}</a></li>
+                {% else %}
+                    <li class="menu_second"><a href="{{ child.permission_url }}">{{ child.permission__title }}</a></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+        </li>
     {% endfor %}
-    </ul>
-    {% endfor %}
-</div>
 
 
+    {#    <li><a class="withripple" href="javascript:;"><i class="icon icon-ui"></i><span class="sidespan">UI设计</span><i#}
+    {#            class="iright pull-right">&gt;</i></a>#}
+    {#        <ul class="sidebar-dropdown">#}
+    {#            <li><a href="" class="withripple">UI设计列表</a></li>#}
+    {#            <li><a href="" class="withripple">添加作品</a></li>#}
+    {#        </ul>#}
+    {#    </li>#}
+
+</ul>

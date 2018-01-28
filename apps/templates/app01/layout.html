@@ -5,18 +5,38 @@
     <title>{% block title %}模板{% endblock %}</title>
     <link rel="stylesheet" href="{{ url_for('static',filename='bootstrap-3.3.7/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static',filename='menu.css') }}">
-    {% block css %} {% endblock css %}
+    {% block css %}
+        <style>
+
+        </style>
+    {% endblock css %}
+
 
 </head>
 <body>
-<div class="container-fluid">
+<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #262930;">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">宇宙最牛X的XX公司</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse pull-right">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">用户</a></li>
+                <li><a href="#about">注销</a></li>
+                <li><a href="#contact">设置</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container-fluid" style="margin-top:50px;">
     <div class="row">
-        <div class="col-md-2 menu">
+        <div class="col-md-2 sidebar">
             {% block menu %}
                 {% include 'rbac/menu_layout.html' %}
             {% endblock menu %}
         </div>
-        <div class="col-md-9">
+        <div class="col-md-9 main_content">
             {% block content %}
                 content
             {% endblock %}
@@ -27,12 +47,22 @@
 
 {% block script %}
     <script src="{{ url_for('static',filename='jquery-3.2.1.min.js') }}"></script>
+    {#    <script>#}
+    {#        $('.menu_first').click(function () {#}
+    {#            $(this).parent().children('ul').addClass('hide');    //当前点击标签的父标签的所有子便签中的ul标签，添加hide属性；#}
+    {#            $(this).next().removeClass('hide');    //下边相邻兄弟标签ul的hide属性被隐藏；#}
+    {#        })#}
+    {#    </script>#}
     <script>
-    $('.menu_first').click(function () {
-        $(this).parent().children('ul').addClass('hide');    //当前点击标签的父标签的所有子便签中的ul标签，添加hide属性；
-        $(this).next().removeClass('hide');    //下边相邻兄弟标签ul的hide属性被隐藏；
-    })
+        $(".sidenav>li>a").click(function () {
+            $(this).addClass("hover");
+            $(this).next().slideToggle();
+            $(this).parent().siblings().children("a").removeClass("hover").next().slideUp();
+
+        });
+
     </script>
+
 {% endblock script %}
 </body>
 </html>

@@ -1,7 +1,65 @@
-.menu {
-    background-color: beige;
+/*被选中情况下的字体，以及背景颜色*/
+.active a {
+    color: #fff;
+}
+.active {
+    /*background-color: #00bfa5;*/
+    background-color: #00bfa5;
 }
 
-.active a {
-    color: red;
+/* sidebar
+ ---------------------------------------- */
+.sidebar{
+  position: fixed;
+  width: 215px; height: 100%; background: #262930;
+  transition: all .3s ease;
+    padding: 0;
+}
+.sidebar > h4{
+  margin: 0; padding: 18px 15px;
+  background: #00bfa5; color: #fff; font-size: 18px;
+  white-space: nowrap;
+}
+
+/*sidenav*/
+.sidenav,.sidebar-dropdown{padding: 0; }
+
+/*控制间隔距离*/
+.sidenav > li > a{
+  display: block;padding: 10px;
+  font-size: 14px; border-left: 2px solid transparent;
+  transition: .3s linear;
+}
+
+.sidenav > li > a > i{margin-right: 10px;}
+
+/*控制鼠标放上去的效果*/
+.sidenav > li > a:hover{
+  border-left: 2px solid #21b496; background: #20242c; text-decoration: none;
+    color: whitesmoke;
+}
+
+.menu_second>a:hover{
+  border-left: 2px solid #21b496;
+}
+
+.iright{margin-top: 4px; font-family:"宋体"; font-style: normal; }
+
+
+.sidebar-dropdown > li > a{display: block; padding: 10px 0 10px 36px;}
+.sidebar-dropdown{
+  display: none;
+  font-size: 14px; background: #20242c; }
+
+
+/* 内容部分 main_content */
+
+.row {
+    position: relative;
+}
+
+.main_content {
+    position: absolute;
+    left: 220px;
+    top: 40px;
 }
