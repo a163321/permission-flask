@@ -27,8 +27,11 @@
 /*控制间隔距离*/
 .sidenav > li > a{
   display: block;padding: 10px;
-  font-size: 14px; border-left: 2px solid transparent;
+  font-size: 18px; border-left: 2px solid transparent;
   transition: .3s linear;
+    font-family:"宋体";
+    color: white;
+
 }
 
 .sidenav > li > a > i{margin-right: 10px;}

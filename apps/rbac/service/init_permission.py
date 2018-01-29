@@ -22,8 +22,8 @@ def init_permission(user, request,session):
             permission_url_list.append(temp)
 
     # print(permission_url_list)
-    # li = [{'permission_menu_id': 1, 'permission_menu_title': '菜单一', 'permission_gp_id': 1, 'permission_gp_caption': '用户信息',
-    #    'url_title': '用户列表', 'per_url': '/userinfo/', 'url_code': 'list'},]
+    li = [{'permission_menu_id': 1, 'permission_menu_title': '菜单一', 'permission_gp_id': 1, 'permission_gp_caption': '用户信息',
+       'url_title': '用户列表', 'per_url': '/userinfo/', 'url_code': 'list'},]
 
     # 1.页面添加、编辑、删除 显示相关
     # dest_permission_dic = {'1': {'code': [], 'per_url': []}, '2': {'code': [], 'per_url': []}}
