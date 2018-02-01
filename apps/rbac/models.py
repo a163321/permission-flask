@@ -27,6 +27,9 @@ class Menu(Base):
     id = Column(Integer,primary_key=True,autoincrement=True)
     title = Column(String(32),)
 
+    def __str__(self):
+        return self.title
+
 
 class Group(Base):
     '''url分组'''
@@ -37,6 +40,9 @@ class Group(Base):
 
     gp_menu = relationship('Menu',backref='menu_gp')
 
+    def __str__(self):
+        return self.caption
+
 
 class User2Role(Base):
     '''用户、角色关系表'''
@@ -44,6 +50,9 @@ class User2Role(Base):
     id = Column(Integer, primary_key=True,autoincrement=True)
     user_id = Column(Integer,ForeignKey('user.id'))
     role_id = Column(Integer,ForeignKey('role.id'))
+
+    def __str__(self):
+        return 'user_id:%s role_id:%s',(self.user_id,self.role_id)
 
     # 联合唯一，以及索引
     # __table_args = UniqueConstraint(
@@ -59,6 +68,8 @@ class Role2Permission(Base):
     role_id = Column(Integer,ForeignKey('role.id'))
     permission_id = Column(Integer,ForeignKey('permission.id'))
 
+    def __str__(self):
+        return 'role_id:%s permission_id:%s'%(self.role_id,self.permission_id)
 
 class User(Base):
     '''用户表'''
@@ -70,6 +81,9 @@ class User(Base):
     # roles与生成表结构无关，仅用于查询方便
     roles = relationship('Role',secondary='user2role',backref='role_users')
 
+    def __str__(self):
+        return self.username
+
 
 class Role(Base):
     '''角色表'''
@@ -80,6 +94,8 @@ class Role(Base):
     users = relationship('User',secondary='user2role',backref='user_roles')
     permission = relationship('Permission',secondary='role2permission',backref='per_roles')
 
+    def __str__(self):
+        return self.title
 
 class Permission(Base):
     '''权限表'''
@@ -96,6 +112,8 @@ class Permission(Base):
     per_group = relationship('Group',backref='group_per')     # permission.per_group能拿到当前权限url坐在的group对象
     per_menu_gp = relationship('Permission',remote_side=[id])      # 自关联，记得加remote_side=[id]
 
+    def __str__(self):
+        return self.url
 
 
 if __name__ == '__main__':

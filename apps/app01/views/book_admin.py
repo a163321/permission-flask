@@ -30,9 +30,7 @@ def login():
             user = session_conn.query(User).filter(User.username == username, User.password == pwd).first()
             if user:
                 # 登录成功
-
-                # request.__setattr__('current_user',{'user_id':user.id,'username':username})
-                # print(request.__getattribute__('current_user'))
+                session['current_user'] = {'user_id':user.id,'username':user.username}
                 init_permission(user, request, session)
                 return redirect(url_for('app01_blue.userinfo'))
             else:

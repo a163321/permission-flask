@@ -21,7 +21,13 @@ def init_permission(user, request,session):
             temp['menu_gp'] =permission.menu_gp
             permission_url_list.append(temp)
 
-    # print(permission_url_list)
+    # 因为一个用户涉及到多个角色，角色之间的权限url可能存在重复，需要去重
+    new_permission_url_list = []
+    for permission_url_dic in permission_url_list:
+        if permission_url_dic not in new_permission_url_list:
+            new_permission_url_list.append(permission_url_dic)
+    permission_url_list = new_permission_url_list
+
     li = [{'permission_menu_id': 1, 'permission_menu_title': '菜单一', 'permission_gp_id': 1, 'permission_gp_caption': '用户信息',
        'url_title': '用户列表', 'per_url': '/userinfo/', 'url_code': 'list'},]
 

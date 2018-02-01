@@ -1,0 +1,25 @@
+{% extends 'app01/layout.html' %}
+
+{% block thead %}
+    <th>ID</th>
+    {% for field in show_fields %}
+        <th>{{ field }}</th>
+    {% endfor %}
+    <th>操作</th>
+{% endblock thead %}
+
+{% block tbody %}
+    {% for r_data in data %}
+    <tr>
+        <td>{{ loop.index }}</td>
+        {% for each_field in show_fields %}
+        <td>{{ r_data.__getattribute__(each_field) }}</td>
+        {% endfor %}
+        <td>
+            <button><a href="{{ r_data.id }}">编辑</a></button>
+            <button><a href="{{ r_data.id }}">删除</a></button>
+        </td>
+    </tr>
+    {% endfor %}
+
+{% endblock tbody %}

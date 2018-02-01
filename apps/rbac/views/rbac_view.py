@@ -2,13 +2,15 @@
 # coding:utf-8
 # author bai
 import re
-from flask import Blueprint,request,session,current_app,redirect,url_for,render_template
-from .menu import Page_permission,menu_html
+from flask import Blueprint, request, session, current_app, redirect, url_for, render_template
+from .menu import Page_permission, menu_html
 from apps.db.db import session_conn  # 用于sqlalchemy连接
+from flask_admin import BaseView, expose
 
-rbac_blue = Blueprint('rbac_blue',__name__)
 
-# 伪中间件
+rbac_blue = Blueprint('rbac_blue', __name__)
+
+
 @rbac_blue.before_app_request
 def process_request():
     current_url = request.path
@@ -21,6 +23,7 @@ def process_request():
             return None
 
     # 2.验证是否已经登录
+    print(session)
     permission_dic = session.get('show_per_dic')
     if not permission_dic:
         return redirect(url_for('app01_blue.login'))
@@ -40,44 +43,94 @@ def process_request():
     if not flag:
         return '无权访问'
 
+
 @rbac_blue.after_app_request
 def process_response(response):
     return response
 
- 
+
 # 关于crud视图函数
 # 表的显示
 
-@rbac_blue.route('/<query_name>/')
-def query_show(query_name):
-    print('现在操作的表是%s'%query_name)
-    code_list = request.permission_code_list  # 在当前页面用于显示的code_list
-    page_permission = Page_permission(code_list)
-    menu_dic = menu_html(request)  # 生成用户在页面渲染菜单的数据，
+def get_current_tb(query_name):
     # 根据当前query_name，用正则匹配到在数据库的表名称，即忽略大小写就可以了，然后查看到数据库的字段，数据，
     total_tabes = current_app.config['TOTAL_TABLES']  # 当前所有的数据库表对象，
     for tb in total_tabes:
         if tb.__name__.lower() == query_name:
             current_tb = tb
+    return current_tb
+
+
+@rbac_blue.route('/<query_name>/')
+def query_show(query_name):
+    code_list = request.permission_code_list  # 在当前页面用于显示的code_list
+    page_permission = Page_permission(code_list)
+    menu_dic = menu_html(request)  # 生成用户在页面渲染菜单的数据，
+    print(request.args.get('page'))
+    current_tb = get_current_tb(query_name)
 
     data = session_conn.query(current_tb).all()
+    show_fields = current_app.config['CRUD'].get(current_tb.__name__)  # 拿到配置的当前表要显示的字段
 
-    return render_template('rbac/menu.html',page_permission=page_permission,menu_dic=menu_dic,data=data)
+    return render_template('rbac/crud_layout.html', page_permission=page_permission, menu_dic=menu_dic, data=data,
+                           show_fields=show_fields,current_tb=current_tb)
+
 
 # 表的添加
 @rbac_blue.route('/<query_name>/add/')
 def query_add(query_name):
-    print(query_name)
-    return '对%s表进行添加操作'%query_name
+    from sqlalchemy.sql.schema import Column
+    current_tb = get_current_tb(query_name)
+    # dic = current_tb.__dict__
+    # for k,v in dic.items():
+    #     if isinstance(v,Column):
+    #         print('77')
+    # for name in current_tb.__dict__:
+    return '对%s表进行添加操作' % query_name
+
 
 # 表的修改
 @rbac_blue.route('/<query_name>/edit/<int:nid>/')
-def query_edit(query_name,nid):
-    print(query_name,nid)
-    return '对%s表进行编辑操作'%query_name
+def query_edit(query_name, nid):
+    print(query_name, nid)
+    return '对%s表进行编辑操作' % query_name
+
 
 # 表的删除
 @rbac_blue.route('/<query_name>/del/<int:nid>/')
-def query_del(query_name,nid):
-    print(query_name,nid)
-    return '对%s表进行删除操作'%query_name
+def query_del(query_name, nid):
+    print(query_name, nid)
+    return '对%s表进行删除操作' % query_name
+
+
+# ============admin组件的代码========================
+class CustomView(BaseView):  # CustomView相当于是一个蓝图，名字是根据CustomView类取
+    """View function of Flask-Admin for Custom page."""
+
+    @expose('/')  # expose用法与blueprint.route一致，当前蓝图下边必须有一个route('/')的路径
+    def index(self):
+        return self.render('admin/custom.html')
+
+    @expose('/second_page')
+    def second_page(self):
+        return self.render('admin/second_page.html')
+
+
+class AdminView(BaseView):
+    """View function of Flask-Admin for Custom page."""
+
+    @expose('/')
+    def index(self):
+        return self.render('admin/custom.html')
+
+    @expose('/second_page')
+    def second_page(self):
+        return self.render('admin/second_page.html')
+
+
+from flask_admin.contrib.sqla import ModelView
+
+
+class CustomModelView(ModelView):
+    """View function of Flask-Admin for Models page."""
+    pass
