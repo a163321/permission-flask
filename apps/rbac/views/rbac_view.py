@@ -23,7 +23,6 @@ def process_request():
             return None
 
     # 2.验证是否已经登录
-    print(session)
     permission_dic = session.get('show_per_dic')
     if not permission_dic:
         return redirect(url_for('app01_blue.login'))
@@ -40,8 +39,8 @@ def process_request():
         if flag:
             break
 
-    if not flag:
-        return '无权访问'
+    # if not flag:
+    #     return '无权访问'
 
 
 @rbac_blue.after_app_request
@@ -134,3 +133,20 @@ from flask_admin.contrib.sqla import ModelView
 class CustomModelView(ModelView):
     """View function of Flask-Admin for Models page."""
     pass
+
+class MenuModelView(ModelView):
+    ''' 处理 Menu 表的类'''
+    can_delete = True             # 是否可以编辑
+    page_size = 2                 #
+    can_view_details = True       # 是否开启详细视图
+    # column_excludes_list = ['']   # 设置不要显示的字段
+
+
+class PermissionModelView(ModelView):
+    can_edit = True
+    page_size = 7
+    column_list = ['title','url','menu_gp','code','group'] #　要显示的字段
+    column_labels = {'title':'url名称','url':'地址','menu_gp':'组内id','code':'code代码','group':'所属分组'}  # 在页面每个字段显示的名字
+    column_editable_list = ('title','url','code',)  # 可以直接在视图中编辑的字段
+
+

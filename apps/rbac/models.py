@@ -30,6 +30,10 @@ class Menu(Base):
     def __str__(self):
         return self.title
 
+    __mapper_args__ = {
+        'confirm_deleted_rows': False
+    }
+
 
 class Group(Base):
     '''url分组'''

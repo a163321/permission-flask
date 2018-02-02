@@ -7,7 +7,7 @@ from .app01 import app01_blue
 from .rbac import rbac_blue
 from apps.db.db import session_conn
 from flask_admin import Admin,BaseView,expose  # 用于做后台管理的组件
-from apps.rbac.views.rbac_view import CustomView,CustomModelView
+from apps.rbac.views.rbac_view import CustomView,CustomModelView,MenuModelView,PermissionModelView
 from apps.rbac.models import Menu,Group,User,User2Role,Role,Role2Permission,Permission
 
 def create_app():
@@ -25,9 +25,15 @@ def create_app():
     flask_admin = Admin()
     flask_admin.init_app(app)
     flask_admin.add_view(CustomView(name='first'))
-    models = [Menu,Group,User,User2Role,Role,Role2Permission,Permission]
+
+    models = [Group,User,User2Role,Role,Role2Permission]
     for model in models:
         flask_admin.add_view(
-            CustomModelView(model, session_conn, category='权限表'))
+            # CustomModelView(model, session_conn,name='权限相关'))  # 如果设置name属性，则这些表都会显示在一组
+            CustomModelView(model, session_conn))
+
+    # 类似于注册处理这个model表的类
+    flask_admin.add_view(MenuModelView(Menu,session_conn))
+    flask_admin.add_view(PermissionModelView(Permission,session_conn))
 
     return app

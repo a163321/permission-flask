@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="83a01853-bb17-4570-ba06-5dff2ed37ccf" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/apps/rbac/admin/admin.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apps/rbac/views/md.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apps/templates/admin/custom.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apps/templates/admin/second_page.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/apps/templates/rbac/crud_layout.html" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/apps/__init__.py" afterPath="$PROJECT_DIR$/apps/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/apps/app01/views/book_admin.py" afterPath="$PROJECT_DIR$/apps/app01/views/book_admin.py" />
       <change beforePath="$PROJECT_DIR$/apps/rbac/models.py" afterPath="$PROJECT_DIR$/apps/rbac/models.py" />
-      <change beforePath="$PROJECT_DIR$/apps/rbac/service/init_permission.py" afterPath="$PROJECT_DIR$/apps/rbac/service/init_permission.py" />
       <change beforePath="$PROJECT_DIR$/apps/rbac/views/rbac_view.py" afterPath="$PROJECT_DIR$/apps/rbac/views/rbac_view.py" />
-      <change beforePath="$PROJECT_DIR$/apps/templates/app01/layout.html" afterPath="$PROJECT_DIR$/apps/templates/app01/layout.html" />
-      <change beforePath="$PROJECT_DIR$/apps/templates/rbac/menu_add.html" afterPath="$PROJECT_DIR$/apps/templates/rbac/add.html" />
-      <change beforePath="$PROJECT_DIR$/manage.py" afterPath="$PROJECT_DIR$/manage.py" />
-      <change beforePath="$PROJECT_DIR$/settings.py" afterPath="$PROJECT_DIR$/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -29,86 +18,28 @@
     <SUITE FILE_PATH="coverage/flask_rbac$models.coverage" NAME="models Coverage Results" MODIFIED="1516149103976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/rbac" />
     <SUITE FILE_PATH="coverage/flask_rbac$models__2_.coverage" NAME="models (2) Coverage Results" MODIFIED="1516273423250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/rbac" />
     <SUITE FILE_PATH="coverage/flask_rbac$models__1_.coverage" NAME="models (1) Coverage Results" MODIFIED="1516193313347" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app01" />
-    <SUITE FILE_PATH="coverage/flask_rbac$manage.coverage" NAME="manage Coverage Results" MODIFIED="1517482946280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/flask_rbac$manage.coverage" NAME="manage Coverage Results" MODIFIED="1517576878835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="manage.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/manage.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="68">
+              <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userinfo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/templates/app01/user/userinfo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="5" column="38" lean-forward="false" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="menu_layout.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/templates/rbac/menu_layout.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/python36/Lib/site-packages/flask/app.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30158">
-              <caret line="913" column="43" lean-forward="false" selection-start-line="913" selection-start-column="43" selection-end-line="913" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sessions.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/python36/Lib/site-packages/flask/sessions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="323" column="19" lean-forward="false" selection-start-line="323" selection-start-column="19" selection-end-line="323" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ctx.py" pinned="false" current-in-tab="false">
-        <entry file="file://C:/python36/Lib/site-packages/flask/ctx.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11016">
-              <caret line="331" column="38" lean-forward="false" selection-start-line="331" selection-start-column="38" selection-end-line="331" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="init_permission.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/rbac/service/init_permission.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="49" column="35" lean-forward="true" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
-              <folding />
+            <state relative-caret-position="217">
+              <caret line="28" column="56" lean-forward="true" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+              <folding>
+                <element signature="e#52#91#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -116,23 +47,46 @@
       <file leaf-file-name="rbac_view.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/rbac/views/rbac_view.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="130" column="42" lean-forward="false" selection-start-line="130" selection-start-column="42" selection-end-line="130" selection-end-column="42" />
+            <state relative-caret-position="136">
+              <caret line="137" column="22" lean-forward="true" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="22" />
               <folding>
-                <element signature="e#402#1251#0" expanded="false" />
-                <element signature="e#2746#2805#0" expanded="false" />
-                <element signature="e#2900#2959#0" expanded="false" />
-                <element signature="e#3419#3666#0" expanded="false" />
+                <element signature="n#!!doc" expanded="false" />
+                <element signature="e#51#60#0" expanded="true" />
+                <element signature="e#1379#1629#0" expanded="false" />
+                <element signature="e#1699#2271#0" expanded="false" />
+                <element signature="e#2351#2634#0" expanded="false" />
+                <element signature="e#2731#2790#0" expanded="false" />
+                <element signature="e#2885#2944#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.py" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/flask_admin/contrib/sqla/view.py">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/rbac/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1156">
-              <caret line="317" column="0" lean-forward="true" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
+            <state relative-caret-position="918">
+              <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="langhelpers.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/python36/Lib/site-packages/sqlalchemy/util/langhelpers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="29">
+              <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="compat.py" pinned="false" current-in-tab="false">
+        <entry file="file://C:/python36/Lib/site-packages/sqlalchemy/util/compat.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -154,11 +108,17 @@
       <find>app(</find>
       <find>menu_gp_per</find>
       <find>per_menu_gp</find>
-      <find>print</find>
       <find>hover</find>
       <find>setings</find>
       <find>VALID_URL</find>
       <find>permission_code_list</find>
+      <find>PermissionModelView</find>
+      <find>print</find>
+      <find>Please implement scaffold_form method</find>
+      <find>get_edit_form</find>
+      <find>get_pk_from</find>
+      <find>get_pk_from_identity</find>
+      <find>_delete_form_class</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -204,10 +164,12 @@
         <option value="$PROJECT_DIR$/apps/templates/rbac/add.html" />
         <option value="$PROJECT_DIR$/apps/templates/rbac/crud_layout.html" />
         <option value="$PROJECT_DIR$/apps/templates/app01/layout.html" />
-        <option value="$PROJECT_DIR$/apps/rbac/models.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/apps/rbac/service/init_permission.py" />
+        <option value="$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/flask_admin/contrib/sqla/fields.py" />
+        <option value="C:/python36/Lib/site-packages/sqlalchemy/orm/util.py" />
         <option value="$PROJECT_DIR$/apps/rbac/views/rbac_view.py" />
+        <option value="$PROJECT_DIR$/apps/rbac/models.py" />
         <option value="$PROJECT_DIR$/apps/__init__.py" />
       </list>
     </option>
@@ -218,7 +180,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="309" />
     <option name="y" value="59" />
     <option name="width" value="1251" />
@@ -240,59 +202,14 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="flask_rbac" type="b2602c69:ProjectViewProjectNode" />
               <item name="flask_rbac" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_rbac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_rbac" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_rbac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_rbac" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="rbac" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_rbac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_rbac" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="rbac" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_rbac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_rbac" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="rbac" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_rbac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_rbac" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_rbac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_rbac" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="app01" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_rbac" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_rbac" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="rbac" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -586,16 +503,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
-    <editor active="true" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.014634146" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3390244" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6374269" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2038835" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20711975" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32955772" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -625,123 +541,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/static/menu.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/templates/app01/user/user_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="33" lean-forward="true" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/templates/app01/user/user_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/templates/app01/user/menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/rbac/views/rbac_crud.py" />
-    <entry file="file://$PROJECT_DIR$/apps/templates/app01/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/templates/app01/order/order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/python36/Lib/site-packages/werkzeug/local.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="291" column="8" lean-forward="false" selection-start-line="291" selection-start-column="8" selection-end-line="291" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/python36/Lib/site-packages/flask/globals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="58" column="16" lean-forward="false" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/rbac/views/crud_form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/rbac/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="3" column="47" lean-forward="false" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/app01/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/db/db.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="6" column="87" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="87" />
-          <folding>
-            <element signature="e#51#90#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/app01/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/flask_admin/_compat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="66" column="4" lean-forward="false" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/rbac/views/md.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/templates/admin/custom.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -760,21 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
           <caret line="4" column="16" lean-forward="true" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/flask_admin/contrib/sqla/fields.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="298" column="0" lean-forward="false" selection-start-line="298" selection-start-column="0" selection-end-line="298" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/flask_admin/model/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-701">
-          <caret line="96" column="33" lean-forward="true" selection-start-line="96" selection-start-column="33" selection-end-line="96" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -862,13 +646,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="13" column="62" lean-forward="false" selection-start-line="13" selection-start-column="62" selection-end-line="13" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/templates/rbac/crud_layout.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
@@ -880,27 +657,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1394">
           <caret line="41" column="73" lean-forward="false" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/rbac/views/menu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="e#2352#2784#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/rbac/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3230">
-          <caret line="95" column="0" lean-forward="false" selection-start-line="95" selection-start-column="0" selection-end-line="95" selection-end-column="0" />
-          <folding>
-            <element signature="e#51#68#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -933,7 +689,7 @@
     </entry>
     <entry file="file://C:/python36/Lib/site-packages/flask/sessions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="10642">
           <caret line="323" column="19" lean-forward="false" selection-start-line="323" selection-start-column="19" selection-end-line="323" selection-end-column="19" />
           <folding />
         </state>
@@ -949,62 +705,328 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/templates/rbac/menu_layout.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+        <state relative-caret-position="466">
+          <caret line="47" column="13" lean-forward="true" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/flask_admin/base.py">
+    <entry file="file://$PROJECT_DIR$/apps/rbac/views/menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7664">
-          <caret line="106" column="0" lean-forward="true" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+        <state relative-caret-position="-748">
+          <caret line="9" column="30" lean-forward="true" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+          <folding>
+            <element signature="e#2352#2784#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/rbac/views/crud_form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/rbac/views/md.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-737">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/flask_admin/_compat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="66" column="4" lean-forward="false" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/flask_admin/actions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/rbac/service/init_permission.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="49" column="35" lean-forward="true" selection-start-line="49" selection-start-column="35" selection-end-line="49" selection-end-column="35" />
+        <state relative-caret-position="257">
+          <caret line="34" column="1" lean-forward="false" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/flask_admin/templates/bootstrap2/admin/model/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/flask_admin/templates/bootstrap2/admin/lib.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="212" column="32" lean-forward="true" selection-start-line="212" selection-start-column="32" selection-end-line="212" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python36/Lib/site-packages/jinja2/runtime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="578" column="0" lean-forward="false" selection-start-line="578" selection-start-column="0" selection-end-line="578" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/wtforms/widgets/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="286" column="0" lean-forward="false" selection-start-line="286" selection-start-column="0" selection-end-line="286" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="8" column="12" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="68">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/__init__.py">
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/flask_admin/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="30" column="19" lean-forward="true" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="232">
+          <caret line="110" column="33" lean-forward="true" selection-start-line="110" selection-start-column="33" selection-end-line="110" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/rbac/views/rbac_view.py">
+    <entry file="file://C:/python36/Lib/site-packages/sqlalchemy/orm/mapper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3175">
+          <caret line="2551" column="8" lean-forward="false" selection-start-line="2551" selection-start-column="8" selection-end-line="2551" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python36/Lib/site-packages/sqlalchemy/orm/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="307" column="28" lean-forward="false" selection-start-line="307" selection-start-column="28" selection-end-line="307" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/flask_admin/contrib/sqla/fields.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
-          <caret line="130" column="42" lean-forward="false" selection-start-line="130" selection-start-column="42" selection-end-line="130" selection-end-column="42" />
+          <caret line="299" column="16" lean-forward="false" selection-start-line="299" selection-start-column="16" selection-end-line="299" selection-end-column="16" />
           <folding>
-            <element signature="e#402#1251#0" expanded="false" />
-            <element signature="e#2746#2805#0" expanded="false" />
-            <element signature="e#2900#2959#0" expanded="false" />
-            <element signature="e#3419#3666#0" expanded="false" />
+            <element signature="e#770#4737#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/flask_admin/model/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="503" column="27" lean-forward="false" selection-start-line="503" selection-start-column="27" selection-end-line="503" selection-end-column="27" />
+          <folding>
+            <element signature="e#5476#6129#1" expanded="false" />
+            <element signature="e#6267#6459#1" expanded="false" />
+            <element signature="e#6496#6631#1" expanded="false" />
+            <element signature="e#7114#8110#1" expanded="false" />
+            <element signature="e#8152#8392#1" expanded="false" />
+            <element signature="e#8496#10012#1" expanded="false" />
+            <element signature="e#10059#10349#1" expanded="false" />
+            <element signature="e#10429#10659#1" expanded="false" />
+            <element signature="e#10696#11015#1" expanded="false" />
+            <element signature="e#11191#11902#1" expanded="false" />
+            <element signature="e#11939#12354#1" expanded="false" />
+            <element signature="e#12540#12849#1" expanded="false" />
+            <element signature="e#12887#13103#1" expanded="false" />
+            <element signature="e#13135#13421#1" expanded="false" />
+            <element signature="e#13453#13735#1" expanded="false" />
+            <element signature="e#13771#14008#1" expanded="false" />
+            <element signature="e#14172#14257#1" expanded="false" />
+            <element signature="e#14297#14752#1" expanded="false" />
+            <element signature="e#14794#15467#1" expanded="false" />
+            <element signature="e#15503#15665#1" expanded="false" />
+            <element signature="e#15687#16014#1" expanded="false" />
+            <element signature="e#16051#16449#1" expanded="false" />
+            <element signature="e#16476#16853#1" expanded="false" />
+            <element signature="e#16883#17450#1" expanded="false" />
+            <element signature="e#17635#17828#1" expanded="false" />
+            <element signature="e#17860#18040#1" expanded="false" />
+            <element signature="e#18074#19133#1" expanded="false" />
+            <element signature="e#19168#19832#1" expanded="false" />
+            <element signature="e#19864#20807#1" expanded="false" />
+            <element signature="e#20835#21973#1" expanded="false" />
+            <element signature="e#22419#22658#1" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/flask_admin/form/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="23" lean-forward="false" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/wtforms/form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python36/Lib/site-packages/sqlalchemy/util/langhelpers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="65" column="0" lean-forward="false" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python36/Lib/site-packages/sqlalchemy/util/compat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="186" column="0" lean-forward="false" selection-start-line="186" selection-start-column="0" selection-end-line="186" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python36/Lib/site-packages/sqlalchemy/orm/dependency.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1101" column="0" lean-forward="false" selection-start-line="1101" selection-start-column="0" selection-end-line="1101" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python36/Lib/site-packages/sqlalchemy/orm/unitofwork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="637" column="0" lean-forward="false" selection-start-line="637" selection-start-column="0" selection-end-line="637" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/python36/Lib/site-packages/sqlalchemy/orm/session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11">
+          <caret line="2326" column="0" lean-forward="false" selection-start-line="2326" selection-start-column="0" selection-end-line="2326" selection-end-column="0" />
+          <folding>
+            <element signature="e#35991#37168#1" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python36/site-packages/flask_admin/contrib/sqla/view.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1156">
-          <caret line="317" column="0" lean-forward="true" selection-start-line="317" selection-start-column="0" selection-end-line="317" selection-end-column="0" />
+        <state relative-caret-position="65">
+          <caret line="1120" column="11" lean-forward="true" selection-start-line="1120" selection-start-column="11" selection-end-line="1120" selection-end-column="11" />
+          <folding>
+            <element signature="e#1021#1171#1" expanded="false" />
+            <element signature="e#1374#1769#1" expanded="false" />
+            <element signature="e#1967#2439#1" expanded="false" />
+            <element signature="e#2658#2751#1" expanded="false" />
+            <element signature="e#2937#4073#1" expanded="false" />
+            <element signature="e#4105#5436#1" expanded="false" />
+            <element signature="e#5494#5797#1" expanded="false" />
+            <element signature="e#5863#6375#1" expanded="false" />
+            <element signature="e#6435#6544#1" expanded="false" />
+            <element signature="e#6579#7061#1" expanded="false" />
+            <element signature="e#7092#8494#1" expanded="false" />
+            <element signature="e#8573#8806#1" expanded="false" />
+            <element signature="e#8849#9062#1" expanded="false" />
+            <element signature="e#9093#9246#1" expanded="false" />
+            <element signature="e#9466#11538#0" expanded="false" />
+            <element signature="e#9466#10604#1" expanded="false" />
+            <element signature="e#11614#11803#0" expanded="false" />
+            <element signature="e#11883#13001#0" expanded="false" />
+            <element signature="e#13056#13262#0" expanded="false" />
+            <element signature="e#13307#13694#0" expanded="false" />
+            <element signature="e#13741#14748#0" expanded="false" />
+            <element signature="e#14799#15540#0" expanded="false" />
+            <element signature="e#15586#17318#0" expanded="false" />
+            <element signature="e#17392#19136#0" expanded="false" />
+            <element signature="e#19173#19905#0" expanded="false" />
+            <element signature="e#19953#24279#0" expanded="false" />
+            <element signature="e#24326#24680#0" expanded="false" />
+            <element signature="e#24719#25428#0" expanded="false" />
+            <element signature="e#25502#26310#0" expanded="false" />
+            <element signature="e#26375#26870#0" expanded="false" />
+            <element signature="e#26915#27635#0" expanded="false" />
+            <element signature="e#27859#28361#0" expanded="false" />
+            <element signature="e#28402#28750#0" expanded="false" />
+            <element signature="e#28834#29884#0" expanded="false" />
+            <element signature="e#29928#30183#0" expanded="false" />
+            <element signature="e#30261#30836#0" expanded="false" />
+            <element signature="e#30923#32414#0" expanded="false" />
+            <element signature="e#32503#34171#0" expanded="false" />
+            <element signature="e#34238#34469#0" expanded="false" />
+            <element signature="e#34597#37329#0" expanded="false" />
+            <element signature="e#37366#37547#0" expanded="false" />
+            <element signature="e#37619#37952#0" expanded="false" />
+            <element signature="e#38017#38718#0" expanded="false" />
+            <element signature="e#38769#39459#0" expanded="false" />
+            <element signature="e#40215#40388#0" expanded="false" />
+            <element signature="e#40569#41374#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/rbac/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="32" column="23" lean-forward="true" selection-start-line="32" selection-start-column="23" selection-end-line="32" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/rbac/views/rbac_view.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="137" column="22" lean-forward="true" selection-start-line="137" selection-start-column="22" selection-end-line="137" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#51#60#0" expanded="true" />
+            <element signature="e#1379#1629#0" expanded="false" />
+            <element signature="e#1699#2271#0" expanded="false" />
+            <element signature="e#2351#2634#0" expanded="false" />
+            <element signature="e#2731#2790#0" expanded="false" />
+            <element signature="e#2885#2944#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="28" column="56" lean-forward="true" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="56" />
+          <folding>
+            <element signature="e#52#91#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
