@@ -49,8 +49,8 @@ def process_request():
 
 
 
-    # if not flag:
-    #     return '无权访问'
+    if not flag:
+        return '无权访问'
 
 
 @rbac_blue.after_app_request
