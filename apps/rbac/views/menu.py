@@ -7,9 +7,9 @@ from apps.rbac.models import Permission
 
 # 菜单的内容,在需要的地方调用，就可以生成菜单需要的数据
 def menu_html(request):
+
     current_url = request.path
     menu_list = session.get('menu_list')
-
     # 思路：直接拿到当前url，拿到他的组内菜单，然后在menu_list中，修改他的item['active'] = True,用于在前端页面展示
     all_url = session_conn.query(Permission).all()
     for url_reg in all_url:

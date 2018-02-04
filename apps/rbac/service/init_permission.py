@@ -9,17 +9,18 @@ def init_permission(user, request,session):
     roles = user.roles
     for role in roles:  # 拿到当前用户的所有的角色
         permissions = role.role_pers  # 拿到当前用户的所有角色的权限,用relations
-        for permission in permissions:
-            temp = {}
-            temp['permission_menu_id'] = permission.per_group.gp_menu.id  # 权限url所属的菜单id
-            temp['permission_menu_title'] = permission.per_group.gp_menu.title  # 权限url所属的菜单title
-            temp['permission_gp_id'] = permission.per_group.id  # 权限url所属的分组id
-            temp['permission_gp_caption'] = permission.per_group.caption  # 权限url所属的分组caption
-            temp['url_title'] = permission.title
-            temp['per_url'] = permission.url
-            temp['url_code'] = permission.code
-            temp['menu_gp'] =permission.menu_gp
-            permission_url_list.append(temp)
+        for permission in permissions:  # ===这里应该要做一个判断，是否拿到了权限，不然控制没有方法。
+            if permission and permission.per_group:
+                temp = {}
+                temp['permission_menu_id'] = permission.per_group.gp_menu.id  # 权限url所属的菜单id
+                temp['permission_menu_title'] = permission.per_group.gp_menu.title  # 权限url所属的菜单title
+                temp['permission_gp_id'] = permission.per_group.id  # 权限url所属的分组id
+                temp['permission_gp_caption'] = permission.per_group.caption  # 权限url所属的分组caption
+                temp['url_title'] = permission.title
+                temp['per_url'] = permission.url
+                temp['url_code'] = permission.code
+                temp['menu_gp'] =permission.menu_gp
+                permission_url_list.append(temp)
 
     # 因为一个用户涉及到多个角色，角色之间的权限url可能存在重复，需要去重
     new_permission_url_list = []

@@ -16,6 +16,7 @@ from apps.rbac.views.menu import menu_html,Page_permission
 
 
 
+
 @app01_blue.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'GET':
@@ -43,20 +44,20 @@ def login():
 
 @app01_blue.route('/userinfo/', endpoint='userinfo')
 def userinfo():
-    code_list = request.permission_code_list  # 在当前页面用于显示的code_list
-    page_permission = Page_permission(code_list)
+    # code_list = request.permission_code_list  # 在当前页面用于显示的code_list
+    # page_permission = Page_permission(code_list)
 
     # 模拟数据
     ret = session_conn.query(User).all()
-    menu_dic = menu_html(request)   # 生成用户在页面渲染菜单的数据，
-    return render_template('/app01/user/userinfo.html', page_permission=page_permission, data=ret, menu_dic=menu_dic)
+    # menu_dic = menu_html(request)   # 生成用户在页面渲染菜单的数据，
+    # return render_template('/app01/user/userinfo.html', page_permission=page_permission, data=ret, menu_dic=menu_dic)
+    return render_template('/app01/user/userinfo.html', data=ret)
 
 
 @app01_blue.route('/userinfo/add/', endpoint='user_add')
 def userinfo_add():
-    menu_dic = menu_html(request)
 
-    return render_template('/app01/user/user_add.html', menu_dic=menu_dic)
+    return render_template('/app01/user/user_add.html')
 
 
 @app01_blue.route('/userinfo/edit/<int:nid>/', endpoint='user_edit')

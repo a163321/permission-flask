@@ -27,7 +27,7 @@
 {#    <p>模板这里可以放头像什么的，但是觉得不好看</p>#}
 {#</div>#}
 <ul class="sidenav animated fadeInUp">
-    {% for k,menu in menu_dic.items() %}
+    {% for k,menu in g.menu_dic.items() %}
         <li><a class="withripple hover" href="javascript:;"><i class="icon icon-article"></i><span
                 class="sidespan">{{ menu.menu_title }}</span><i class="iright pull-right">&gt;</i>
             </a>

@@ -39,9 +39,11 @@
         <div class="col-md-9 main_content">
             {% block content %}
                 <div class="panel panel-default">
-                    <div class="panel-heading"><h4>{{ current_tb.__name__ }}表信息</h4></div>
+{#                    <div class="panel-heading"><h4>{{ current_tb.__name__ }}表信息</h4></div>#}
+                    <div class="panel-heading"><h4>表信息</h4></div>
                     <div class="panel-body">
-                        <p><button class="btn btn-info"><a href="/rbac/{{ current_tb.__tablename__ }}/add/">添加</a></button></p>
+{#                        <p><button class="btn btn-info"><a href="/rbac/{{ current_tb.__tablename__ }}/add/">添加</a></button></p>#}
+                        <p><button class="btn btn-info"><a href="/rbac/add/">添加</a></button></p>
                         <table class="table table-bordered table-hover">
                             <thead>
                                 <tr>

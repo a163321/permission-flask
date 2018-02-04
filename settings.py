@@ -5,7 +5,8 @@
 
 class BaseConfig(object):
     from apps.rbac.models import Menu,Group,User2Role,Role2Permission,User,Role,Permission
-    VALID_URL = ['/app01/login','/static/.*?','/admin/.*?']
+    # VALID_URL = ['/app01/login','/static/.*?','/admin/.*?']
+    VALID_URL = ['/app01/login','/static/.*?',]
     TOTAL_TABLES = [Menu,Group,User2Role,Role2Permission,User,Role,Permission]
     # 配置每张表在页面的显示字段
     CRUD = {
